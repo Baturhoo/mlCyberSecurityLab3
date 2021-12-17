@@ -11,6 +11,15 @@
 ├── models
     └── bd_net.h5
     └── bd_weights.h5
+    └── repaired_bd_net.h5
+    └── repaired_bd_weights.h5
+    └── repaired_bd_net2.h5
+    └── repaired_bd_weights2.h5
+    └── repaired_bd_net4.h5
+    └── repaired_bd_weights4.h5
+    └── repaired_bd_net10.h5
+    └── repaired_bd_weights10.h5
+
 ├── architecture.py
 └── eval.py // this is the evaluation script
 ```
@@ -39,3 +48,9 @@
 
 ## IV. Important Notes
 Please use only clean validation data (valid.h5) to design the pruning defense. And use test data (test.h5 and bd_test.h5) to evaluate the models. 
+
+## V. Use
+Run repair.py to repair the net
+/model/repaired_bd_net2.h5 is X=2% model    /model/repaired_bd_net4.h5 is X=4% model    /model/repaired_bd_net10.h5 is X=10% model
+
+
